@@ -1,0 +1,10 @@
+<div *ngIf="lotteryInfo">
+  <p class="display-5 text-center my-5 fw-bold">
+    {{ lotteryInfo.lotteryName }} LOTTERY
+  </p>
+  <app-grid
+    [upperLimit]="lotteryInfo.upperLimit"
+    [numberOfNumbers]="lotteryInfo.numberOfNumbers"
+    [lotteryName]="lotteryInfo.lotteryName"
+  ></app-grid>
+</div>
